@@ -1,0 +1,43 @@
+<div class="container d-flex justify-content-center align-items-center flex-column text-center">
+    <h2 class="t mt-4">Blogs</h2>
+    <% blogs.forEach(element => {%>
+        <div class="blogs d-flex justify-content-center align-items-center  flex-column mb-4">
+                <span class="new_blog">new</span>
+                <div class="title d-flex justify-content-center align-items-center  flex-column">
+                    <h3><a href="/blogs/<%= element.title %>"><%= element.title%></a></h3>
+                    <p><%= element.date%></p>
+                </div>
+
+                <div class="article d-flex justify-content-center align-items-start  flex-column" >
+                    <%var article_to_post = element.article %>
+                    <%var truncated_article = article_to_post.substring(0, 150) %>
+                    <p><%= truncated_article + "..."%></p>
+                    <a href="/blogs/<%= element.title %>">Read more</a>
+                </div>
+        </div>
+     <% });%>
+</div>
+
+ 
+<style>
+    .blogs{
+        padding: 4rem;
+        background-color: aliceblue;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        max-width: 800px;
+    }
+
+    .new_blog{
+        margin-bottom: 1rem;
+        color: rgb(9, 9, 9);
+        padding: 5px 7px;
+        border-radius: 5px;
+        text-align: center;
+        background-color: rgba(1, 1, 238, 0.444);
+    }
+
+    p{
+        text-align: start;
+    }
+
+</style>

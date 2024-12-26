@@ -1,2 +1,2 @@
-# Quize-Game
-Nice program makes you test your self on coding web
+# QuizAura
+This is my portfolio project on alx SE program

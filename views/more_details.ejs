@@ -1,0 +1,103 @@
+<div class="container d-flex justify-content-center align-items-center flex-column text-center">
+    <div class="blogs d-flex justify-content-center align-items-center flex-column mb-4">
+        <span class="new_blog">new</span>
+        <div class="title d-flex justify-content-center align-items-center flex-column">
+            <h3><%= title %></h3>
+            <p><%= date %></p>
+        </div>
+
+        <div class="article d-flex justify-content-center align-items-start flex-column">
+            <p><%= article %></p>
+        </div>
+
+        <div class="portfolio container mt-4">
+            <div class="social_media">
+                <a href="https://www.facebook.com" class="social_media_buttons">
+                    <i class="fab fa-facebook-f"></i> share 
+                </a>
+                <a href="https://www.instagram.com" class="social_media_buttons">
+                    <i class="fab fa-instagram"></i> share 
+                </a>
+                <a href="https://www.linkedin.com" class="social_media_buttons">
+                    <i class="fab fa-linkedin-in"></i> share
+                </a>
+            </div>
+            <div class="container creator_info">
+                <div class="img_name d-flex justify-content-center align-items-center flex-column">                
+                    <img src="/image/WhatsApp Image 2024-12-25 at 10.39.36_2c23d515.jpg" class="img">
+                    <h3><a href="https://github.com/Errafai/QuizAura">Achraf Errafai</a></h3>
+                    <p><a href="/">@Achraferrafai</a></p>
+                </div>
+                <div>
+                    <p>
+                        Achraf is the designer of Flexbox Froggy and the founder of 
+                        Codepip. Before Codepip, he worked as a computing education and 
+                        human-computer interaction researcher at Drexel University's
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .blogs{
+        padding: 4rem;
+        background-color: aliceblue;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        max-width: 800px;
+    }
+
+    .new_blog{
+        margin-bottom: 1rem;
+        color: rgb(9, 9, 9);
+        padding: 5px 7px;
+        border-radius: 5px;
+        text-align: center;
+        background-color: rgba(1, 1, 238, 0.444);
+    }
+
+    p{
+        text-align: start;
+    }
+
+    .fab{
+        margin-right:.6rem;
+    }
+
+    .social_media_buttons{
+        width: 100px;
+        padding: 6px 5px;
+        margin-right: 1rem;
+        border-radius: 7px;
+    }
+
+    .social_media_buttons:nth-child(1){
+        background-color: blue;
+        color: white;
+    }
+
+    .social_media_buttons:nth-child(2){
+        background-color: rgb(255, 0, 76);
+        color: white;
+    }
+
+    .social_media_buttons:nth-child(3){
+        background-color: rgba(0, 0, 255, 0.456);
+        color: white;
+    }
+
+    .creator_info{
+        padding: 3rem;
+        margin-top: 3rem;
+        background-color: rgba(217, 220, 222, 0.521);
+        border-radius: 12px;
+    }
+
+    .img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+</style>

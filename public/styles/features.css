@@ -1,0 +1,115 @@
+/* ,ACHR : A => achievement 
+           CH => check ponts
+           R => release
+*/
+
+h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 5%;
+    color: gray;
+    text-transform: capitalize;
+}
+p{
+    color: gray;
+    letter-spacing: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#features{
+    width: 100%;
+    padding: 7% 13%;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    
+}
+
+.ACHR{
+    font-size: 5rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(250, 235, 215, 0.422);
+    border-radius: 50%;
+}
+
+
+/* features 2 */
+
+#features2{
+    width: 100%;
+    height:auto;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.row1 {
+    border: 1px solid #080909;
+    height: 25rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.row1 .content {
+    flex: 6; /* 70% of the height */
+}
+
+.row1 .game_info {
+    width: 100%;
+    flex: 4; /* 30% of the height */
+    background: rgba(0, 0, 0, 0.249); /* Optional: Add a background overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.row1:hover{
+    transform: scale(1.01);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+#comments{
+    text-align: center;
+}
+
+.row2 {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #080909;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s;
+}
+
+.footer_container{
+    display: flex;
+    align-items: start;
+  }
