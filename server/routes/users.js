@@ -18,15 +18,25 @@ router.get('/login', async (req, res) => {
 * register page
 */
 router.get('/register', async (req, res) => {
-  res.render("users/register");
+  res.render("users/register", { layout: usersLayout });
 });
+
+/**
+ * POST |
+ * admin user
+ */
 
 router.get('/admin', async (req, res) => {
-  res.render("users/admin");
+  res.render("users/admin", { layout: usersLayout });
 });
 
+/**
+ * POST |
+ * dashboard user
+ */
+
 router.get('/dashboard', async (req, res) => {
-  res.render("users/dashboard");
+  res.render("users/dashboard", { layout: usersLayout });
 });
 
 module.exports = router;
