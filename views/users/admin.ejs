@@ -1,11 +1,14 @@
-<section class="profile_header text-center d-flex justify-content-center align-items-center">
-    <div class="text_content mt-4 d-flex justify-content-center align-items-center">
-        <div class="profile">
-            <img class="img" src="/image/WhatsApp Image 2024-12-25 at 10.39.36_2c23d515.jpg" alt="">
+    <section class="profile_header text-center d-flex justify-content-center align-items-center">
+        <div class="text_content mt-4 d-flex justify-content-center align-items-center">
+            <div class="profile">
+                <img class="img" src="/image/WhatsApp Image 2024-12-25 at 10.39.36_2c23d515.jpg" alt="">
+            </div>
+            <h3>Name_you will get from database</h3>
         </div>
-        <h3>Name_you will get from database</h3>
-    </div>
-</section>
+    </section>
+</header>
+
+
 <section class="d-flex justify-content-center align-items-center ">
     <div class="container py-5 color">
         <div class="row g-4">
@@ -215,22 +218,4 @@
     }
 </style>
 
-<!-- java script code for progress games -->
-
-<script>
-
-    // This function sidi achraf will udate the porgress
-
-    function updateProgress(gameId, current, total) {
-        const progressElement = document.getElementById(`${gameId}-progress`);
-        const scoreElement = document.getElementById(`${gameId}-score`);
-        const progress = (current / total) * 100;
-        progressElement.style.width = `${progress}%`;
-        progressElement.setAttribute("aria-valuenow", current);
-        scoreElement.textContent = `${current}/${total}`;
-    }
-
-    // Example of dynamic update
-    updateProgress('game1', 30, 80);
-    updateProgress('game2', 23, 30)
-</script>
+<!-- java script code for progress games check styles/progr-->

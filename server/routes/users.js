@@ -25,4 +25,8 @@ router.get('/admin', async (req, res) => {
   res.render("users/admin");
 });
 
+router.get('/dashboard', async (req, res) => {
+  res.render("users/dashboard");
+});
+
 module.exports = router;
