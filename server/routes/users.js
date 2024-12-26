@@ -10,15 +10,13 @@ const jwt = require("jsonwebtoken");
  * login page
  */
 router.get('/login', async (req, res) => {
-    res.render("users/login",
-      {layout: usersLayout}
-    );
+  res.render("users/login", { layout: usersLayout });
 });
 
 /**
- * GET |
- * register page
- */
+* GET |
+* register page
+*/
 router.get('/register', async (req, res) => {
   res.render("users/register");
 });
