@@ -51,16 +51,22 @@ router.get("/blogs", (req, res) => {
 
 router.get("/blogs/:article", (req, res) => {
   var path = _.lowerCase(req.params.article);
+  let found = false;
 
   blogs.forEach(element => {
     if (path === _.lowerCase(element.title)) {
-      res.render("more_details", {
+      found = true;
+      return res.render("more_details", {
         title: element.title,
         article: element.article,
         date: element.date
       });
     }
   });
+
+  if (!found) {
+    res.status(404).send("Article not found");
+  }
 });
 
 
