@@ -58,7 +58,7 @@ a{
 .row1 {
     border: 1px solid #080909;
     height: 25rem;
-    width: auto;
+    width: 21rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
